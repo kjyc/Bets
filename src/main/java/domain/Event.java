@@ -50,6 +50,17 @@ public class Event implements Serializable {
 		this.evDate = eventDate;
 		this.sport = s;
 	}
+	
+	public Event(Integer evId, String evDescription,Date eventDate) {
+		this.evId = evId;
+		this.evDescription = evDescription;
+		this.evDate = eventDate;
+	}
+	
+	public Event(String description, Date eventDate) {
+		this.evDescription = description;
+		this.evDate = eventDate;
+	}
 
 	public Integer getEvId() {
 		return evId;

@@ -1,0 +1,124 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-09-30 23:41:25 #1 store] 
+Database 'C:\Users\kevin\git\Bets\src\main\resources\bets.temp' is opened by 5372@DESKTOP-K79DMTI
+
+[2021-09-30 23:41:25 #2 type.registry] 
+New type domain.Pronostic
+
+[2021-09-30 23:41:25 #3 type] 
+Type domain.Pronostic is not enhanced.
+
+[2021-09-30 23:41:25 #4 type.registry] 
+New type domain.Bet
+
+[2021-09-30 23:41:25 #5 type.registry] 
+New type java.util.ArrayList<domain.Bet>
+
+[2021-09-30 23:41:25 #6 type.registry] 
+New type domain.Question
+
+[2021-09-30 23:41:25 #7 type] 
+Type domain.Bet is not enhanced.
+
+[2021-09-30 23:41:25 #8 type.registry] 
+New type domain.User
+
+[2021-09-30 23:41:25 #9 type] 
+Type domain.Question is not enhanced.
+
+[2021-09-30 23:41:25 #10 type.registry] 
+New type java.util.ArrayList<domain.Pronostic>
+
+[2021-09-30 23:41:25 #11 type.registry] 
+New type domain.Event
+
+[2021-09-30 23:41:25 #12 type] 
+Type domain.User is not enhanced.
+
+[2021-09-30 23:41:25 #13 type] 
+Type domain.Event is not enhanced.
+
+[2021-09-30 23:41:25 #14 type.registry] 
+New type java.util.ArrayList<domain.User>
+
+[2021-09-30 23:41:25 #15 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-09-30 23:41:25 #16 type.registry] 
+New type domain.Sport
+
+[2021-09-30 23:41:25 #17 type] 
+Type domain.Sport is not enhanced.
+
+[2021-09-30 23:41:25 #18 type.registry] 
+New type java.util.ArrayList<domain.Event>
+
+[2021-09-30 23:41:25 #19 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2021-09-30 23:41:25 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2021-09-30 23:47:16 #1 store] 
+Database 'C:\Users\kevin\git\Bets\src\main\resources\bets.temp' is opened by 14096@DESKTOP-K79DMTI
+
+[2021-09-30 23:47:16 #2 type.registry] 
+New type domain.Pronostic
+
+[2021-09-30 23:47:16 #3 type] 
+Type domain.Pronostic is not enhanced.
+
+[2021-09-30 23:47:16 #4 type.registry] 
+New type domain.Bet
+
+[2021-09-30 23:47:16 #5 type.registry] 
+New type java.util.ArrayList<domain.Bet>
+
+[2021-09-30 23:47:16 #6 type.registry] 
+New type domain.Question
+
+[2021-09-30 23:47:16 #7 type] 
+Type domain.Bet is not enhanced.
+
+[2021-09-30 23:47:16 #8 type.registry] 
+New type domain.User
+
+[2021-09-30 23:47:16 #9 type] 
+Type domain.Question is not enhanced.
+
+[2021-09-30 23:47:16 #10 type.registry] 
+New type java.util.ArrayList<domain.Pronostic>
+
+[2021-09-30 23:47:16 #11 type.registry] 
+New type domain.Event
+
+[2021-09-30 23:47:16 #12 type] 
+Type domain.User is not enhanced.
+
+[2021-09-30 23:47:16 #13 type] 
+Type domain.Event is not enhanced.
+
+[2021-09-30 23:47:16 #14 type.registry] 
+New type java.util.ArrayList<domain.User>
+
+[2021-09-30 23:47:16 #15 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2021-09-30 23:47:16 #16 type.registry] 
+New type domain.Sport
+
+[2021-09-30 23:47:16 #17 type] 
+Type domain.Sport is not enhanced.
+
+[2021-09-30 23:47:16 #18 type.registry] 
+New type java.util.ArrayList<domain.Event>
+
+[2021-09-30 23:47:16 #19 type.registry] 
+New type java.util.ArrayList<java.lang.Object>
+
+[2021-09-30 23:47:16 #20 type.registry] 
+New type java.util.Vector<java.lang.Object>
+

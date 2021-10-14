@@ -294,21 +294,48 @@ public class DataAccess {
 		return e;
 	}
 
+	/**
+	 * Agrega un usuario a un evento
+	 * 
+	 * @param e evento
+	 * @param u usuario
+	 */
+
 	public void updateEventGambler(Event e, User u) {
+		if (e == null || u == null)
+			throw new NullPointerException("Event or User is null.");
+
+		//Event event = db.find(Event.class, e.getEvId());
+		Event event = findEvent(e.getEvDescription(), e.getEvDate());
+		
+		if (event == null)
+			throw new NullPointerException("Event not in DB.");
+		
+		User user = db.find(User.class, u.getUsName());
+		
+		if (user == null)
+			throw new NullPointerException("User not in DB.");
+
 		db.getTransaction().begin();
 
-		Event event = db.find(Event.class, e.getEvId());
 		if (event.getGamblers().isEmpty()) {
-			event.addGamblers(u);
+			event.addGamblers(user);
+			db.persist(event);
+			System.out.println("Evento actualizado: " + user.getUsName() + " agredo a la lista.");
 		} else {
+			boolean contains = false;
 			for (User us : event.getGamblers()) {
-				if (us.getUsName().equals(u.getUsName())) {
-					event.addGamblers(u);
-					db.persist(event);
-					System.out.println("Evento actualizado: " + u.getUsName() + " agredo a lista de gambler.");
-				} else {
-					System.out.println("El evento ya contiene al usuario en lista de Gamblers");
+				if (user.getUsName().equals(us.getUsName())) {
+					contains = true;
+					break;
 				}
+			}
+			if (!contains) {
+				event.addGamblers(user);
+				db.persist(event);
+				System.out.println("Evento actualizado: " + user.getUsName() + " agredo a la lista.");
+			} else {
+				System.out.println("El evento contiene al usuario: " + user.getUsName());
 			}
 		}
 
