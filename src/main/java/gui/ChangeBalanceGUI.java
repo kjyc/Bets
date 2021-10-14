@@ -12,7 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.JSpinner;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import businesslogic.BLFacade;
 
 public class ChangeBalanceGUI extends JFrame {
 

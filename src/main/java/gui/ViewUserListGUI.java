@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import businesslogic.BLFacade;
 import domain.User;
 
 public class ViewUserListGUI extends JFrame {

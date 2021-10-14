@@ -1,4 +1,4 @@
-package businessLogic;
+package businesslogic;
 
 //hola
 import java.util.Date;
@@ -23,7 +23,7 @@ import exceptions.QuestionAlreadyExist;
 /**
  * It implements the business logic as a web service.
  */
-@WebService(endpointInterface = "businessLogic.BLFacade")
+@WebService(endpointInterface = "businesslogic.BLFacade")
 public class BLFacadeImplementation implements BLFacade {
 	DataAccess dbManager;
 	User u;
@@ -174,9 +174,9 @@ public class BLFacadeImplementation implements BLFacade {
 
 	public User findUser(String name) {
 		dbManager.open(false);
-		User u = dbManager.findUser(name);
+		User user = dbManager.findUser(name);
 		dbManager.close();
-		return u;
+		return user;
 	}
 
 	public Bet findBet(Integer id) {
@@ -201,11 +201,11 @@ public class BLFacadeImplementation implements BLFacade {
 
 	public boolean login(String name, String pass) {
 		dbManager.open(false);
-		User u = dbManager.findUser(name);
+		User user = dbManager.findUser(name);
 		dbManager.close();
 
-		if (u != null) {
-			if (u.getUsPassword().equals(pass)) {
+		if (user != null) {
+			if (user.getUsPassword().equals(pass)) {
 				return true;
 			}
 		}

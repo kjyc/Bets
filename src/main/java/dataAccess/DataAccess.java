@@ -69,26 +69,26 @@ public class DataAccess {
 
 			Sport sp1 = new Sport("Futbol");
 
-			Event ev1 = sp1.setSpEvents("AtlÃ©tico-Athletic", UtilDate.newDate(year, month - 2, 17));
+			Event ev1 = sp1.setSpEvents("Atlético-Athletic", UtilDate.newDate(year, month - 2, 17));
 			Event ev2 = sp1.setSpEvents("Eibar-Barcelona", UtilDate.newDate(year, month, 17));
 			Event ev3 = sp1.setSpEvents("Getafe-Celta", UtilDate.newDate(year, month, 17));
-			Event ev4 = sp1.setSpEvents("AlavÃ©s-Deportivo", UtilDate.newDate(year, month, 17));
-			Event ev5 = sp1.setSpEvents("EspaÃ±ol-Villareal", UtilDate.newDate(year, month, 17));
+			Event ev4 = sp1.setSpEvents("Alavés-Deportivo", UtilDate.newDate(year, month, 17));
+			Event ev5 = sp1.setSpEvents("Español-Villareal", UtilDate.newDate(year, month, 17));
 			Event ev6 = sp1.setSpEvents("Las Palmas-Sevilla", UtilDate.newDate(year, month, 17));
 			Event ev7 = sp1.setSpEvents("Malaga-Valencia", UtilDate.newDate(year, month, 17));
-			Event ev8 = sp1.setSpEvents("Girona-LeganÃ©s", UtilDate.newDate(year, month, 17));
+			Event ev8 = sp1.setSpEvents("Girona-Leganés", UtilDate.newDate(year, month, 17));
 			Event ev9 = sp1.setSpEvents("Real Sociedad-Levante", UtilDate.newDate(year, month, 17));
 			Event ev10 = sp1.setSpEvents("Betis-Real Madrid", UtilDate.newDate(year, month, 17));
 
 			Event ev11 = sp1.setSpEvents("Atletico-Athletic", UtilDate.newDate(year, month, 1));
 			Event ev12 = sp1.setSpEvents("Eibar-Barcelona", UtilDate.newDate(year, month, 1));
 			Event ev13 = sp1.setSpEvents("Getafe-Celta", UtilDate.newDate(year, month, 1));
-			Event ev14 = sp1.setSpEvents("AlavÃ©s-Deportivo", UtilDate.newDate(year, month, 1));
-			Event ev15 = sp1.setSpEvents("EspaÃ±ol-Villareal", UtilDate.newDate(year, month, 1));
+			Event ev14 = sp1.setSpEvents("Alavés-Deportivo", UtilDate.newDate(year, month, 1));
+			Event ev15 = sp1.setSpEvents("Español-Villareal", UtilDate.newDate(year, month, 1));
 			Event ev16 = sp1.setSpEvents("Las Palmas-Sevilla", UtilDate.newDate(year, month, 1));
 
-			Event ev17 = sp1.setSpEvents("MÃ¡laga-Valencia", UtilDate.newDate(year, month + 1, 28));
-			Event ev18 = sp1.setSpEvents("Girona-LeganÃ©s", UtilDate.newDate(year, month + 1, 28));
+			Event ev17 = sp1.setSpEvents("Málaga-Valencia", UtilDate.newDate(year, month + 1, 28));
+			Event ev18 = sp1.setSpEvents("Girona-Leganés", UtilDate.newDate(year, month + 1, 28));
 			Event ev19 = sp1.setSpEvents("Real Sociedad-Levante", UtilDate.newDate(year, month + 1, 28));
 			Event ev20 = sp1.setSpEvents("Betis-Real Madrid", UtilDate.newDate(year, month + 1, 28));
 
@@ -99,15 +99,15 @@ public class DataAccess {
 			Question q5;
 			Question q6;
 
-			q1 = ev1.addEvQuestion("Â¿QuiÃ©n ganarÃ¡ el partido?", 1);
-			q2 = ev1.addEvQuestion("Â¿QuiÃ©n meterÃ¡ el primer gol?", 2);
-			q3 = ev11.addEvQuestion("Â¿QuiÃ©n ganarÃ¡ el partido?", 1);
-			q4 = ev11.addEvQuestion("Â¿CuÃ¡ntos goles se marcarÃ¡n?", 2);
-			q5 = ev17.addEvQuestion("Â¿QuiÃ©n ganarÃ¡ el partido?", 1);
-			q6 = ev17.addEvQuestion("Â¿HabrÃ¡ goles en la primera parte?", 2);
+			q1 = ev1.addEvQuestion("¿Quién ganará el partido?", 1);
+			q2 = ev1.addEvQuestion("¿Quién meterá el primer gol?", 2);
+			q3 = ev11.addEvQuestion("¿Quién ganará el partido?", 1);
+			q4 = ev11.addEvQuestion("¿Cuántos goles se marcarán?", 2);
+			q5 = ev17.addEvQuestion("¿Quién ganará el partido?", 1);
+			q6 = ev17.addEvQuestion("¿Habrá goles en la primera parte?", 2);
 
 			Pronostic p1 = q1.addQuesPronostic(4, "Ganara el Athletic.");
-			Pronostic p2 = q1.addQuesPronostic(3, "Ganara el AtlÃ©tico.");
+			Pronostic p2 = q1.addQuesPronostic(3, "Ganara el Atlético.");
 
 			db.persist(p1);
 			db.persist(p2);

@@ -1,7 +1,6 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.text.ParseException;
@@ -9,12 +8,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Vector;
 
-
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import businessLogic.BLFacadeImplementation;
+import businesslogic.BLFacadeImplementation;
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
 import domain.Event;
@@ -26,11 +22,10 @@ import utility.TestUtilityFacadeImplementation;
 class CreateQuestionBLTest {
 	private DataAccess da = new DataAccess(ConfigXML.getInstance().getDataBaseOpenMode().equals("initialize"));
 
-	private  BLFacadeImplementation sut= new BLFacadeImplementation(da);
-	private  TestUtilityFacadeImplementation testBL= new TestUtilityFacadeImplementation();
+	private BLFacadeImplementation sut = new BLFacadeImplementation(da);
+	private TestUtilityFacadeImplementation testBL = new TestUtilityFacadeImplementation();
 
 	private Event ev;
-
 
 	@Test
 	// sut.createQuestion: The event has one question with a queryText.
@@ -77,7 +72,7 @@ class CreateQuestionBLTest {
 				assertNotNull(q);
 				assertEquals(queryText, q.getQuesDescription());
 				assertEquals(betMinimum, q.getQuesBetMinimum());
-				
+
 				// verify DB
 				Vector<Event> es = testBL.getEvents(oneDate);
 
@@ -85,7 +80,6 @@ class CreateQuestionBLTest {
 				assertEquals(2, es.get(0).getEvQuestions().size());
 				assertEquals(queryText, es.get(0).getEvQuestions().get(1).getQuesDescription());
 				assertEquals(betMinimum, es.get(0).getEvQuestions().get(1).getQuesBetMinimum());
-
 
 				// Remove the created objects in the database (cascade removing)
 				boolean b = testBL.removeEvent(ev);
@@ -97,7 +91,7 @@ class CreateQuestionBLTest {
 			} catch (EventFinished e) {
 				// if the program goes to this point fail
 				fail("The event date is later than the current date");
-			} 
+			}
 		} catch (ParseException e) {
 			fail("It should be correct: check the date format");
 		}

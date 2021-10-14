@@ -9,16 +9,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.WindowConstants;
 import javax.swing.border.EmptyBorder;
 
-import domain.Event;
 import java.awt.Font;
 
 public class AdminMainGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	// private BLFacade bussinessLogic = LoginGUI.getBusinessLogic();
 
 	/**
 	 * Launch the application.
@@ -41,7 +40,7 @@ public class AdminMainGUI extends JFrame {
 	 */
 	public AdminMainGUI() {
 		setTitle("Menu de administradores");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		setBounds(100, 100, 443, 382);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -75,12 +74,12 @@ public class AdminMainGUI extends JFrame {
 		contentPane.add(jButtonCreateEvent);
 		// fin crear evento
 
-		// inicio aï¿½adir pronostico
+		// inicio añadir pronostico
 		JButton jButtonCreatePronostic = new JButton("A\u00F1adir Pronostico");
 		jButtonCreatePronostic.setFont(new Font("Tahoma", Font.PLAIN, 10));
 		jButtonCreatePronostic.setBounds(240, 131, 124, 23);
 		contentPane.add(jButtonCreatePronostic);
-		// fin aï¿½adir pronostico
+		// fin añadir pronostico
 
 		// inicio Cerrar Evento
 		JButton jButtonCloseEvent = new JButton("Cerrar Evento");
@@ -107,15 +106,15 @@ public class AdminMainGUI extends JFrame {
 		btnNewButton.setBounds(61, 230, 122, 23);
 		contentPane.add(btnNewButton);
 		
-		JButton btnNewButton_1 = new JButton("Editar Evento");
-		btnNewButton_1.addActionListener(new ActionListener() {
+		JButton btnNewButton1 = new JButton("Editar Evento");
+		btnNewButton1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				UpdateEventGUI upE = new UpdateEventGUI(new Vector<Event>());
+				UpdateEventGUI upE = new UpdateEventGUI(new Vector<>());
 				upE.setVisible(true);
 			}
 		});
-		btnNewButton_1.setBounds(240, 230, 124, 23);
-		contentPane.add(btnNewButton_1);
+		btnNewButton1.setBounds(240, 230, 124, 23);
+		contentPane.add(btnNewButton1);
 		
 		JLabel lblNewLabel = new JLabel("Modo Administrador");
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 16));
@@ -136,7 +135,6 @@ public class AdminMainGUI extends JFrame {
 		jButtonCreateEvent.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				CreateEventGUI ce = new CreateEventGUI();
-				// CalendarioIndex_a_ ce = new CalendarioIndex_a_();
 				ce.setVisible(true);
 			}
 		});
@@ -157,7 +155,7 @@ public class AdminMainGUI extends JFrame {
 
 		jButtonCreateQuestion.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				CreateQuestionGUI qu = new CreateQuestionGUI(new Vector<Event>());
+				CreateQuestionGUI qu = new CreateQuestionGUI(new Vector<>());
 				qu.setVisible(true);
 			}
 		});
@@ -171,7 +169,7 @@ public class AdminMainGUI extends JFrame {
 
 		jButtonClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				jButtonClose_actionPerformed(e);
+				jButtonCloseActionPerformed(e);
 			}
 		});
 		// Fin Listeners
@@ -182,7 +180,7 @@ public class AdminMainGUI extends JFrame {
 	 * 
 	 * @param e
 	 */
-	private void jButtonClose_actionPerformed(ActionEvent e) {
+	private void jButtonCloseActionPerformed(ActionEvent e) {
 		this.setVisible(false);
 	}
 }

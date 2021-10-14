@@ -14,7 +14,7 @@ import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import businessLogic.BLFacade;
+import businesslogic.BLFacade;
 import domain.Bet;
 import domain.Event;
 import domain.Sport;

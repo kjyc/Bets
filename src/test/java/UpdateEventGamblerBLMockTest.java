@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mockito;
 
-import businessLogic.BLFacade;
-import businessLogic.BLFacadeImplementation;
+import businesslogic.BLFacade;
+import businesslogic.BLFacadeImplementation;
 import dataAccess.DataAccess;
 import domain.Event;
 import domain.User;
