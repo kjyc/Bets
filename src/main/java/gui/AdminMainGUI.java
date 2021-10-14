@@ -74,12 +74,12 @@ public class AdminMainGUI extends JFrame {
 		contentPane.add(jButtonCreateEvent);
 		// fin crear evento
 
-		// inicio añadir pronostico
+		// inicio aÃ±adir pronostico
 		JButton jButtonCreatePronostic = new JButton("A\u00F1adir Pronostico");
 		jButtonCreatePronostic.setFont(new Font("Tahoma", Font.PLAIN, 10));
 		jButtonCreatePronostic.setBounds(240, 131, 124, 23);
 		contentPane.add(jButtonCreatePronostic);
-		// fin añadir pronostico
+		// fin aÃ±adir pronostico
 
 		// inicio Cerrar Evento
 		JButton jButtonCloseEvent = new JButton("Cerrar Evento");

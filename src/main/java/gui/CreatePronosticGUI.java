@@ -83,7 +83,7 @@ public class CreatePronosticGUI extends JFrame {
 
 	private void jbInit() throws Exception {
 
-		this.setTitle("Añadir pronosticos");
+		this.setTitle("AÃ±adir pronosticos");
 		this.getContentPane().setLayout(null);
 		this.setSize(new Dimension(700, 500));
 		this.getContentPane().add(jLabelCalendar, null);
@@ -293,7 +293,7 @@ public class CreatePronosticGUI extends JFrame {
 					Pronostic pronostico = businessLogic.createPronostic((int) jSpinnerGain.getValue(), p,
 							selectedQuestion);
 					jLabelError.setText("Pronostico anadido");
-					System.out.println("::: Pronostico añadido --> " + pronostico.getProDescription() + " :::");
+					System.out.println("::: Pronostico aÃ±adido --> " + pronostico.getProDescription() + " :::");
 					businessLogic.updateQuestion(selectedQuestion, pronostico);
 					jTextPronostic.setText("");
 					jSpinnerGain.setValue(0);

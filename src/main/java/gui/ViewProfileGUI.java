@@ -147,7 +147,7 @@ public class ViewProfileGUI extends JFrame {
 					cantBet = cantBet + b.getBetCant();
 				}
 				jLabelPronos.setText("Pronostico:          " + p.getProDescription());
-				jLabelAmountBets.setText("Cantidad total apostada:         " + cantBet + "�");
+				jLabelAmountBets.setText("Cantidad total apostada:         " + cantBet + "€");
 				jLabelCantBets.setText("Cantidad total de apuestas:          " + businessLogic.getU().getBets().size());
 				jLabelBalance.setText("Saldo actual:          " + businessLogic.getU().getUsBalance() + "�");
 

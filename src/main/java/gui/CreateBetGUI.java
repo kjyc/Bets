@@ -301,7 +301,7 @@ public class CreateBetGUI extends JFrame {
 				tablePronos.getColumnModel().getColumn(0).setPreferredWidth(25);
 				tablePronos.getColumnModel().getColumn(1).setPreferredWidth(268);
 
-				jLabelMinimumBet.setText("Apuesta minima: " + selectedQuestion.getQuesBetMinimum() + " �");
+				jLabelMinimumBet.setText("Apuesta minima: " + selectedQuestion.getQuesBetMinimum() + "€");
 			}
 		});
 

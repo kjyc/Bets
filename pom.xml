@@ -62,6 +62,7 @@
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<sonar.projectKey>bets2122</sonar.projectKey>
 		<sonar.login>3b18afbcb34812ade0abf1c4e9e3d9056d051425</sonar.login>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<!-- https://mvnrepository.com/artifact/junit/junit -->
 	<dependencies>
