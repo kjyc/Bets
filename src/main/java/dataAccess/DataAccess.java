@@ -241,7 +241,7 @@ public class DataAccess {
 	}
 
 	/**
-	 * Funci�n que busca un evento por su descripcion y fecha
+	 * Funcion que busca un evento por su descripcion y fecha
 	 * 
 	 * @param eventName descripcion
 	 * @param eDate     fecha

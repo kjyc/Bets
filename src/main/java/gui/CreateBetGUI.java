@@ -362,7 +362,7 @@ public class CreateBetGUI extends JFrame {
 					facade.getU().setUsBalance(newBalance);
 					facade.updateUserBalance(facade.getU(), newBalance);
 					// Mostrar nuevo saldo
-					jLabelUsBalance.setText("Saldo actual: " + newBalance + " �");
+					jLabelUsBalance.setText("Saldo actual: " + newBalance + " €");
 					Bet b = facade.createBet(betCant, selectedPronos, facade.getU());
 					System.out.println("::: Apuesta anadida --> id: " + b.getBetId() + " :::");
 					facade.updateEventBets(selectedEvent); // aumenta la cantidad de apuesta en el evento +1
