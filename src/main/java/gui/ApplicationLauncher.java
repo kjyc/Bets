@@ -11,6 +11,7 @@ import businesslogic.BLFacade;
 import businesslogic.BLFacadeImplementation;
 import configuration.ConfigXML;
 import dataAccess.DataAccess;
+import gui.LoginGUI;
 
 public class ApplicationLauncher {
 

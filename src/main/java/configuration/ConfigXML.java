@@ -85,9 +85,9 @@ public class ConfigXML {
 
 			// Two possible values: true (no instance of RemoteServer needs to be launched)
 			// or false (RemoteServer needs to be run first)
-			String value = ((Element) config.getElementsByTagName("businesslogic").item(0)).getAttribute("local");
-			businessLogicLocal = value.equals("true");
-
+			//String value = ((Element) config.getElementsByTagName("businesslogic").item(0)).getAttribute("local");
+			//businessLogicLocal = value.equals("true");
+			businessLogicLocal = true;
 			businessLogicNode = getTagValue("businessLogicNode", config);
 
 			businessLogicPort = getTagValue("businessLogicPort", config);
@@ -100,9 +100,9 @@ public class ConfigXML {
 
 			// Two possible values: true (no instance of RemoteServer needs to be launched)
 			// or false (RemoteServer needs to be run first)
-			value = ((Element) config.getElementsByTagName("database").item(0)).getAttribute("local");
-			databaseLocal = value.equals("true");
-
+			//value = ((Element) config.getElementsByTagName("database").item(0)).getAttribute("local");
+			//databaseLocal = value.equals("true");
+			databaseLocal = true;
 			// Two possible values: "open" or "initialize"
 			dataBaseOpenMode = getTagValue("dataBaseOpenMode", config);
 
